@@ -1,0 +1,330 @@
+:root{
+    --main-color:#10cab7;
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Work Sans", sans serif;
+}
+.header{
+    padding: 20px 0 0;
+}
+.container{
+    padding-left: 170px;
+    padding-right: 170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    width: 67px;
+}
+.header .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+.header span{
+    height: 2px;
+    background-color: #000016;
+    margin-bottom: 6px;
+}
+.header .icon :first-child{
+    width: 30px;
+}
+.header .icon :nth-child(2){
+    width: 18px;
+    transition: 0.7s;
+}
+.header .icon :nth-child(3){
+    width: 30px;
+}
+.header .icon:hover span{
+    width: 30px;
+}
+.header .icon:hover ul{
+    display: block;   
+}
+.header ul{
+    position: absolute;
+    top: 55px;
+    right: 170px;
+    width: 220px;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+    overflow-x: clip;
+    display: none;
+}
+.header li a {
+    text-decoration: none;
+    color: #302929;
+    border-bottom: 1px solid #5d5d5d;
+    padding: 0 400px 20px 12px;
+    transition: 0.7s;
+}
+.header li{
+    list-style: none;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.header ul::before{
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.header .container li :hover{
+    padding-left: 55px;
+}
+.header ul :last-child a{
+    border: 0px;
+}
+.section .img{
+    background-image: url(../Images/bird-1045954_1920.jpg);
+    background-size: cover;
+    height: 560px;
+}
+.section .text{
+    position: relative;
+    top: 222px;
+    line-height: 1.5;
+}
+.section h1{
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.section p{
+    width: 500px;
+    text-align: center;
+    font-size: 16.5px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+}
+.section2{
+    display: flex;
+    background-color: #eee;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    text-align: center;
+}
+.section2 .fcard{
+    width: 310px;
+    padding: 10px 20px;
+}
+.section2 .scard{
+    width: 310px;
+    padding: 10px 20px;
+}
+.section2 .tcard{
+    width: 310px;
+    padding: 10px 20px;
+}
+.section2 .cards i{
+    color: var(--main-color);
+}
+.cards h3{
+    font-size: 800;
+}
+.cards p{
+    line-height: 1.3;
+    color: #777;
+    font-size: 17px;
+}
+.title{
+    font-size: 100px;
+    font-weight: 800;
+    text-align: center;
+    color: #a5a4a4;
+}
+.title-p{
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+}
+.services .services-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,310px);
+    gap: 35px;
+}
+.services i{
+    position: relative;
+    right: 20px;
+    top: 50px;
+}
+.services .text{
+    text-align: center;
+    line-height: 1.5;
+}
+.services .col img{
+    margin-top: 80px;
+    width: 200px;
+    height: 250px;
+}
+.services .services-content .image {
+    position: relative;
+  }
+.services .image::after{
+    content: "";
+    width: 80px;
+    height: 300px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 55px;
+    right: 70px;
+    z-index: -1;
+}
+.portfolio{
+    margin-top: 100px;
+    background-color: #eee;
+}
+.portfolio img{
+    width: 310px;
+    margin-left: -20px;
+    margin-bottom: -5px;
+}
+.portfolio .fcard ,.portfolio .scard ,.portfolio .tcard{
+    margin: 10px 10px 0 0;
+    width: 310px;
+    padding: 10px 20px;
+    background-color: #f6f6f6;
+    padding-top: 0;
+}
+.portfolio .text{
+    text-align: start;
+}
+.about{
+    margin-top: 100px;
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about img{
+    width: 200px;
+    height: 300px;
+    margin-left: 50px;
+}
+.about .about-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.about .about-img ::before{
+    content: "";
+    width: 50px;
+    height: 100%;
+    background-color: #eee;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.about .about-img ::after{
+    content: "";
+    width: 100px;
+    height: 200px;
+    border-bottom: 20px solid var(--main-color);
+    border-left: 20px solid var(--main-color);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+.about .about-text{
+    margin-left: 100px;
+    max-width: 550px;
+}
+.about .about-text :first-child{
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+.about .about-text hr{
+    width: 50%;
+    display: inline-block;
+    border-color: var(--main-color);
+}
+.about .about-text :last-child{
+    line-height: 2;
+    color: #777;
+}
+.contact{
+    margin-top: 100px;
+    background-color: #eee;
+    padding-bottom: 100px;
+}
+.contact .title-p{
+    margin-top: -65px;
+}
+.contact .contact-title{
+    position: relative;
+    top: 40px;
+}
+.contact .info{
+    width: 550px;
+}
+.contact .info .label{
+    padding-top: 50px;
+    padding-left: 20px;
+    color: #0e409e;
+    font-size: 36px;
+    font-weight: 800;
+    position: relative;
+    top: 25px;
+}
+.contact .info .link{
+    padding-left: 75px;
+    color: var(--main-color);
+    font-size: 32px;
+    font-weight: 800;
+}
+.contact .social{
+    margin-top: 50px;
+    text-align: center;
+}
+.contact .social i{
+    margin-left: 20px;
+}
+.footer{
+    padding: 30px;
+    background-color: #0e409e;
+    text-align: center;
+    color: white;
+}
+.footer span{
+    color: var(--main-color);
+}
+@media (max-width: 720px){
+    .container{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+@media (max-width: 642px){
+    .container{
+        padding-right: 5px;
+    }
+    .contact .info .link{
+        font-size: 16px;
+        font-weight: 100;
+    }
+}
